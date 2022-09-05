@@ -52,6 +52,12 @@ a {
     transition: 1.5s ease;
     
 }
+.nav-links>.links :hover{
+    color: rgb(204, 87, 87);
+    border-bottom:   #FAFAFA solid 1.5px;
+    transition: 0.5s;
+
+}
 
 .links,
 .nav-ul {
@@ -71,7 +77,7 @@ a {
 
 }
 
-.you{
+.bnb{
     color: rgb(204, 87, 87);
 }
 .btn{
