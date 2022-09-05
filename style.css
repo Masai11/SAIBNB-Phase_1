@@ -90,12 +90,12 @@ a {
     letter-spacing: 3px;
 }
 .btn:hover{
-    color: rgb(204, 87, 87);
+    color: rgb(192, 80, 80);
     background-color: white;
     transition: 0.5s ease-in;
 }
 .container >.landing{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/5699451/pexels-photo-5699451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/12607553/pexels-photo-12607553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,14 +111,14 @@ a {
     align-items: center;
 }
 .landing-txt{
-    width: 70vh;
-    height:40vh;
+    width: 100vh;
+    height:30vh;
     padding-left: 40px;
     margin-top: 25vh;
        
 }
 .health{
-    color: #E8BC5A;
+    color: rgb(204, 87, 87);
 }
 .heading1{
     color: #fff;
@@ -475,7 +475,7 @@ ul {
 .footer-center {
     text-align: center;
     margin-bottom: 1em;
-    color:  rgb(204, 87, 87);
+    color: rgb(192, 80, 80);
 ;
     font-size: 1.2em;
     
@@ -489,7 +489,7 @@ ul {
     justify-content: space-between;
 }
 .icons i:hover{
-    color: rgb(204, 87, 87);
+    color: rgb(192, 80, 80);
     
 }
 
