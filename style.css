@@ -90,7 +90,7 @@ a {
     letter-spacing: 3px;
 }
 .btn:hover{
-    color: rgb(192, 80, 80);
+    color: rgb(204, 87, 87);
     background-color: white;
     transition: 0.5s ease-in;
 }
