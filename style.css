@@ -95,7 +95,7 @@ a {
     transition: 0.5s ease-in;
 }
 .container >.landing{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/12607553/pexels-photo-12607553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,7 +136,7 @@ a {
 .about {
     display: flex;
     justify-content: space-between;
-    height: 70vh;
+    height: 100vh;
     
     background-color: rgb(245, 245, 245);
 
@@ -146,13 +146,13 @@ a {
 .about-text {
     width: 40%;
     padding-right: 4em;
-    margin-top: 10vh;
+    margin-top: 30vh;
     align-items: center;
     margin-bottom: 2em;
     
 }
 .about-text>.heading{
-    color: #0A306C;
+    color: rgb(204, 87, 87);
     font-size: 3em;
     
 
@@ -160,7 +160,7 @@ a {
 
 .about-image {
     width: 40%;
-    height: 55.3vh;
+    height: 40.5vh;
     margin-left: 0;
     margin-top: 10vh;
     
@@ -173,28 +173,28 @@ a {
 
 .border {
     width: 2em;
-    border-bottom: #E8BC5A 4px solid;
+    border-bottom: rgb(204, 87, 87) 4px solid;
     margin-top: .1em;
 }
 .parabout{
     margin-bottom: 5em;
 }
 .bottom{
-    color: #E8BC5A;
+    color: #FAFAFA;
     padding: .75em;
     border-radius: 40px;
     font-weight: 500;
     font-size: 1.3em;
-    background-color: #0A306C;
+    background-color: rgb(204, 87, 87);
     margin-top: 300px;
     text-align: center;
     
     letter-spacing: 3px;
 }
 .bottom:hover{
-    color: #FAFAFA;
-    background-color: #E8BC5A;
-    transition: 1.5s ease-in;
+    color: rgb(204, 87, 87);
+    background-color: black;
+    transition: 0.5s ease;
 }
 .counsellors-sec{
     
@@ -511,4 +511,11 @@ footer{
     margin-top: 5vh;
     padding-bottom: 5vh;
     padding-top: 10vh;
+}
+.contact{
+
+    color:rgb(204, 87, 87) ;
+}
+.our{
+    color: #FAFAFA;
 }
