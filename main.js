@@ -50,7 +50,7 @@ async function getCityID() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'f3840985cdmsh164f4bca44cd1e2p1fec19jsn9460b16ca752',
+            'X-RapidAPI-Key': 'd7cee7e113msh0552e757c971af1p1c7717jsn616b0f52e4d5',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
@@ -62,7 +62,7 @@ async function loadHosts() {
     const placeOptions = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'f3840985cdmsh164f4bca44cd1e2p1fec19jsn9460b16ca752',
+            'X-RapidAPI-Key': 'd7cee7e113msh0552e757c971af1p1c7717jsn616b0f52e4d5',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
@@ -88,10 +88,17 @@ form.addEventListener('submit', async (event) => {
 
     hosts['data'].forEach(host => {
 
-        hostCards.innerHTML += '<div class="properties-card"><img class="card-img"src="'+host['images'][0]+'"alt="" /><div class="card-txt"><h4>'+host['listingName']+'</h4><p>'+host['price']+'</p></div></div>'
+
+
+        hostCards.innerHTML += ' <div class="properties-card"><img class="card-img"src="'+ host['images'][0] +'" alt="" /><div class="card-txt"><h5 class="apt-title">' + host['listingName'] + '</h5><div class="row"><div class="col col-left"><p class="apt-loc center"><i class="ph-map-pin-line apt-icon"></i>' + host['publicAddress'] + '</p><p class="apt-beds center"><i class="ph-bed apt-icon"></i>' + host['listingBedLabel'] + '</p><p class="apt-guests center"><i class="ph-user apt-icon"></i>' + host['listingGuestLabel'] + '</p></div><div class="col col-right"><div class="apt-rating center"><i class="ph-asterisk-simple apt-icon"></i>' + host['avgRating'] +'</div><p class="apt-baths center"><i class="ph-toilet apt-icon"></i>' + host['listingBathroomLabel'] +'</p><p class="apt-price center"><i class="ph-money apt-icon"></i>' + host['accesibilityLabel'] + '</p></div></div></div></div>'
+
     });
 
     document.querySelector('.hidden').classList.remove('hidden');
+
+    document.getElementById('hosts').scrollIntoView({
+        behavior: 'smooth'
+    }, false);
 })
 
 function formatDate(date, format) {
