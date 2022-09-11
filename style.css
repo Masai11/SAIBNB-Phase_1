@@ -441,6 +441,53 @@ h4 {
 } */
 
 
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 2em 0;
+}
+
+.comments {
+    margin: 2em 0;
+
+}
+
+.comment {
+    margin: .5em;
+    background-color: #fafafa;
+    padding: .4em .3em;
+    border-radius: 8px;
+}
+
+.name {
+    font-weight: 500;
+    margin: .2em 0;
+}
+
+.date {
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.hidden {
+    display: none;
+}
+
+.pad {
+    margin-top: 3em;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.input {
+    padding: .5em;
+}
+
+
 
 footer {
     width: 100%;
