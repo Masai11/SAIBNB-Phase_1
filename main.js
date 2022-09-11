@@ -17,6 +17,31 @@ let hostCards = document.querySelector('.cards');
 
 addEventListener('DOMContentLoaded', (event) => {
     // prompt("Welcome")
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+// btn.onclick = function () {
+//     modal.style.display = "block";
+// }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 });
 
 const delay = (ms = 1000) => new Promise(r => setTimeout(r, ms));
@@ -79,3 +104,5 @@ commentBtn.addEventListener('click', (event) => {
     comments.innerHTML += '<div class="comment"><div class="title"><p class="name">'+username.value+'</p><p class="date">~ '+today+'</p></div><p>'+comment.value+'</p></div>'
     commentsForm.reset()
 })
+
+
