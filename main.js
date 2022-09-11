@@ -54,12 +54,8 @@ form.addEventListener('submit', async (event) => {
 
     hosts['data'].forEach(host => {
 
-        hostCards.innerHTML += ''
+        hostCards.innerHTML += '<div class="properties-card"><img class="card-img"src="'+host['images'][0]+'"alt="" /><div class="card-txt"><h4>'+host['listingName']+'</h4><p>'+host['price']+'</p></div></div>'
     });
 
     document.querySelector('.hidden').classList.remove('hidden');
 })
-
-
-
-
