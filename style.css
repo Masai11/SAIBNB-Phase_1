@@ -32,7 +32,7 @@ a {
 .nav {
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: black;
+    background-color: #0D223B;
     font-weight: 400;
     text-align: center;
 }
@@ -294,9 +294,9 @@ input[type="search"] {
 }
 
 .cards>.properties-card:nth-child(odd)>.card-txt {
-    background-color: white;
+    background-color: #657DFD;
     padding-left: 2em;
-    color: black;
+    color: #FAFAFA;
     padding-top: 0px;
     height: 15%;
 }
@@ -358,7 +358,7 @@ input[type="search"] {
     margin-left: 0;
     padding-bottom: 3em;
     margin-right: 0;
-    background-color: black;
+    background-color: #0D223B;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -441,12 +441,18 @@ h4 {
 } */
 
 
-img {
+/* img {
     width: 100%;
     border-radius: 8px;
     margin: 2em 0;
-}
+} */
 
+.container-comment{
+    /* margin: 0 30px; */
+    background-color: #0D223B;
+    display: flex;
+    justify-content: space-evenly;
+}
 .comments {
     margin: 2em 0;
 
@@ -454,9 +460,10 @@ img {
 
 .comment {
     margin: .5em;
-    background-color: #fafafa;
+    background-color: #657DFD;
     padding: .4em .3em;
     border-radius: 8px;
+    color: #FAFAFA;
 }
 
 .name {
@@ -569,7 +576,7 @@ ul {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #0D223B;
     margin-top: 5vh;
     padding-bottom: 5vh;
     padding-top: 10vh;
