@@ -4,11 +4,20 @@ var city = document.querySelector('#city');
 var adults = document.querySelector('#adults');
 var children = document.querySelector('#children');
 var date = document.querySelector('#date');
+let comments = document.querySelector('.comments')
+let commentsForm = document.querySelector('.form')
+let username = document.querySelector('#name')
+let comment = document.querySelector('#comment')
+let commentBtn =    document.querySelector('#comment-submit')
 
 var cityId;
 
 let cityName = document.querySelector('.city-name');
 let hostCards = document.querySelector('.cards');
+
+addEventListener('DOMContentLoaded', (event) => {
+    // prompt("Welcome")
+});
 
 const delay = (ms = 1000) => new Promise(r => setTimeout(r, ms));
 
@@ -58,4 +67,15 @@ form.addEventListener('submit', async (event) => {
     });
 
     document.querySelector('.hidden').classList.remove('hidden');
+})
+
+function formatDate(date, format) {
+    
+}
+
+commentBtn.addEventListener('click', (event) => {
+    event.preventDefault()
+    var today = moment().format('D MMMM YYYY, hh:mma');
+    comments.innerHTML += '<div class="comment"><div class="title"><p class="name">'+username.value+'</p><p class="date">~ '+today+'</p></div><p>'+comment.value+'</p></div>'
+    commentsForm.reset()
 })
