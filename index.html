@@ -15,6 +15,8 @@
 
 <body>
 
+
+
   <!-- navbar starts here -->
   <div class="nav">
     <ul class="nav-ul">
@@ -49,6 +51,30 @@
   </div>
 
   <!-- navbar ends here -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <div class="sorround">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Welcome to SaiBnB</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur necessitatibus iusto, quidem libero
+          possimus pariatur aut dicta repudiandae deleniti beatae adipisci obcaecati laudantium velit a
+          nesciunt quia sint repellat quaerat numquam? Ullam, eaque! Incidunt quam consequuntur laboriosam
+          molestias ipsam qui!</p>
+
+        <h4>Instructions</h4>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
   <div class="container">
     <!-- landing page starts here -->
     <div class="landing">
@@ -152,44 +178,38 @@
     <!-- comments section starts here -->
 
 
-    <div class="container">
-      <main>
-        <div class="head">
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p class="name">Bill Smith - <span class="date">12 August</span></p>
+    <div class="container-comment">
+
+
+
+
+
+      <div class="comments">
+        <h4>Comments</h4>
+        <div class="comment">
+          <div class="title">
+            <p class="name">Lorem, ipsum dolor.</p>
+            <p class="date">~ 01 September 2022, 10.20pm</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi molestiae exercitationem tempora
+            error, quas fugit ea ducimus et quos harum!</p>
         </div>
-        <img data-aos="fade-right"
-          src="https://images.unsplash.com/photo-1529619987053-8d0fd0e42ea9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="...">
+      </div>
 
-
-        <div class="comments">
-          <h4>Comments</h4>
-          <div class="comment">
-            <div class="title">
-              <p class="name">Lorem, ipsum dolor.</p>
-              <p class="date">~ 01 September 2022, 10.20pm</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi molestiae exercitationem tempora
-              error, quas fugit ea ducimus et quos harum!</p>
-          </div>
+      <form data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="form-pad" action="">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input class="input" type="email" id="name" name="email" required>
         </div>
+        <div class="input-group">
+          <label for="name">Comment</label>
+          <textarea class="input" name="comment" id="comment" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="input-group right">
+          <input class="submit-comment" type="submit" id="comment-submit" value="Submit">
+        </div>
+      </form>
 
-        <form data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="form pad" action="">
-          <div class="input-group">
-            <label for="name">Name</label>
-            <input class="input" type="email" id="name" name="email" required>
-          </div>
-          <div class="input-group">
-            <label for="name">Comment</label>
-            <textarea class="input" name="comment" id="comment" cols="30" rows="10" required></textarea>
-          </div>
-          <div class="input-group">
-            <input class="input" type="submit" id="comment-submit" value="Submit">
-          </div>
-        </form>
-
-      </main>
 
     </div>
     <!-- comments section ends here -->
