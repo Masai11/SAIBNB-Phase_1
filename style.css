@@ -451,18 +451,31 @@ h4 {
     /* margin: 0 30px; */
     background-color: #0D223B;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 60vh;
 }
 .comments {
     margin: 2em 0;
+    width: 35%;
+
+}
+.comments > h4 {
+    color: #ef3f5a;
 
 }
 
 .comment {
     margin: .5em;
-    background-color: #657DFD;
+    background-color: #304055;
     padding: .4em .3em;
     border-radius: 8px;
+    color: #FAFAFA;
+}
+.form-pad{
+    width: 35%;
     color: #FAFAFA;
 }
 
@@ -483,6 +496,29 @@ h4 {
 .pad {
     margin-top: 3em;
 }
+.right{
+    display: flex;
+    align-items: center;
+}
+.submit-comment{
+    background-color: #657DFD;
+    padding: 1em 0;
+    border-radius: 5px;
+    border: none;
+    color: #FAFAFA;
+    font-weight: bold;
+    width: 20%;
+    
+}
+.submit-comment:hover{
+    cursor: pointer;
+    background-color: #ef3f5a;
+    padding: 1em 0;
+    border-radius: 5px;
+    border: none;
+    color: #FAFAFA;
+    font-weight: bold;
+}
 
 .input-group {
     display: flex;
@@ -492,6 +528,13 @@ h4 {
 
 .input {
     padding: .5em;
+    background-color: #304055;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 7px;
+}
+.input:focus {
+    outline: none;
 }
 
 
@@ -589,4 +632,29 @@ footer {
 
 .our {
     color: #FAFAFA;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    /* 15% from the top and centered */
+    padding: 35px;
+    border-radius: 8px;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
